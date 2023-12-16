@@ -119,7 +119,7 @@ class ResNet9(nn.Module):
 
         self.conv1 = conv(3, 150)
         self.conv2 = conv(150, 300, pool=True)
-        self.res1 = nn.Sequential(conv(250, 250), conv(250, 250))
+        self.res1 = nn.Sequential(conv(300, 300), conv(300, 300))
 
         self.conv3 = conv(300, 500, pool=True)
         self.conv4 = conv(500, 1000, pool=True)
